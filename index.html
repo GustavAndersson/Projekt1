@@ -6,92 +6,78 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='shortcut icon' type='image/x-icon' href='treby2.ico' />
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel='stylesheet' href='bower_components/fullcalendar/dist/fullcalendar.css' />
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        
-        <style>
-        body{
-            padding-top: 50px;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .navbar {
-            padding-top: 15px;
-            padding-bottom: 15px;
-            border: 0;
-            border-radius: 0;
-            margin-bottom: 0;
-            font-size: 12px;
-            letter-spacing: 5px;
-                }
+        <link rel='stylesheet' href='fullcalendar-3.0.0/fullcalendar.css' />
+        <link rel="stylesheet" href="main.css"/>
+        <script src='js/jquery.min.js'></script>
+        <script src='js/moment.min.js'></script>
+        <script src='js/fullcalendar.min.js'></script>
+        <script>
 
-        .navbar-nav li a:hover {
-            color: #9CD919 !important;
-            -moz-transition: all .2s ease-in;
-            -o-transition: all .2s ease-in;
-            -webkit-transition: all .2s ease-in;
-            transition: all .2s ease-in;
-                }
-        
-        .bg-4 { 
-            background-color: #2f2f2f;
-            color: #ffffff;
-                }
-                
-        .container-fluid {
-            padding-top: 70px;
-            padding-bottom: 70px;
-                }
-        body {
-            font: 20px "Montserrat", sans-serif;
-            line-height: 1.8;
-            }
+	$(document).ready(function() {
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'month,agendaWeek,agendaDay'
+			},
+			defaultDate: '2014-06-12',
+			defaultView: 'month',
+			editable: true,
+			events: [
+				{
+					title: 'All Day Event',
+					start: '2014-06-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2014-06-07',
+					end: '2014-06-10'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2014-06-09T16:00:00'
+				},
+				{
+					id: 999,
+					title: 'Repeating Event',
+					start: '2014-06-16T16:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2014-06-12T10:30:00',
+					end: '2014-06-12T12:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2014-06-12T12:00:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2014-06-13T07:00:00'
+				},
+				{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2014-06-28'
+				}
+			]
+		});
+		
+	});
 
-            p {font-size: 16px;}
-            
-            
-            .intro-section {
-            height: 80%;
-            padding-top: 150px;
-            text-align: center;
-            background: #fff;
-            background-image: url('Kids-Football-Match.png');
-            background-size: 100%;
-            background-repeat: no-repeat;
-            color: #fff;
-            }
-            
-            @media only screen and (max-width: 600px) {
-            /* css for mobile */
-            .intro-section {
-            padding-top: 150px;
-            text-align: center;
-            background: #fff;
-            background: url('Kids-Football-Match.png');
-            background-size: 200%;
-            background-repeat: no-repeat;
-            }
-        </style>
-        <script> 
-            $(document).ready(function() {
+</script>     
+</head>
 
-            // page is now ready, initialize the calendar...
-
-            $('#calendar').fullCalendar({
-            // put your options and callbacks here
-            })
-
-            });
-        </script>
-    </head>
     <body>
         <header>
             <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header page-scroll">
                         <!--Header-->
-                        <img src ="littletreby.png" alt="Treby IF" class="navbar-left "/>
+                        <img src ="littletreby.png" alt="Treby IF" class="navbar-left"/>
                         <button class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
                           <span class="icon-bar"></span>
                           <span class="icon-bar"></span>
@@ -115,19 +101,19 @@
                     <div class="col-md-12">
                         <h1>Treby IF</h1>
                         <p>En förening för alla</p>
-                        <a class="btn btn-danger page-scroll" href="#foreningen">Läs mer om vår förening</a>
+                        <a class="btn page-scroll" href="#foreningen">Läs mer om vår förening</a>
                     </div>
                 </div>
             </div>
             </section>
         
         <!-- Container (The Band Section) -->
-        <section id="foreningen" class="foreningen-section text-center">
+        <div id="foreningen" class="container text-center">
             <div class="container">
             <h3>Föreningen</h3>
             <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-        </section>
+        </div>
         
         <div class="container">
         <div id="carousel-example-generic" class="carousel slide" style="width: 70%; margin: 0 auto" data-ride="carousel">
@@ -175,7 +161,7 @@
         </div>
         </div>
         
-        <section id="truppen" class="truppen-section text-center">
+        <div id="truppen" class="container text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -183,13 +169,48 @@
                 </div>
             </div>
         </div>
-        </section>
+        </div>
         
-        <div id="calendar"></div>
+        <div id="contact" class="container">
+        <h3 class="text-center">Kontakta oss</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Killeberg, Sverige</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>Telefon: 0479-30477</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>Email: trebyif@telia.com</p>
+                </div>
+                
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                    <input class="form-control" id="name" name="name" placeholder="Namn" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                
+            <textarea class="form-control" id="comments" name="comments" placeholder="Kommentar" rows="5"></textarea>
+            <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                    <button class="btn pull-right" type="submit">Skicka</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
         
-        <footer class="container-fluid bg-4 text-center">
-            <p>Webpage Made By Gustav Andersson <span class="glyphicon glyphicon-copyright-mark"></span></p> 
+        <footer class="text-center">
+            <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Till toppen">
+                <span class="glyphicon glyphicon-chevron-up"></span>
+            </a>
+            <p>Webpage Made By Gustav Andersson</p>
         </footer>
+        
+        <!--<footer class="container-fluid bg-4 text-center">
+            <p>Webpage Made By Gustav Andersson <span class="glyphicon glyphicon-copyright-mark"></span></p> 
+        </footer> -->
         
         <script>
             $('.carousel').carousel();
@@ -201,10 +222,6 @@
         <script src="js/bootstrap.min.js"></script>
         <!-- Scrolling Nav JavaScript -->
         <script src="js/jquery.easing.min.js"></script>
-        <script src="js/scrolling-nav.js"></script>
-        <!-- Kalender -->
-        <script src='lib/jquery.min.js'></script>
-        <script src='lib/moment.min.js'></script>
-        <script src='fullcalendar/fullcalendar.js'></script>    
+        <script src="js/scrolling-nav.js"></script>   
     </body>
 </html>
