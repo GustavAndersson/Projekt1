@@ -1,10 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="sv">
     <head>
         <title>Treby IF</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <link rel='shortcut icon' type='image/x-icon' href='treby2.ico' />
         <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -14,75 +14,15 @@
         <script src="./month_files/moment.min.js"></script>
         <script src="./month_files/jquery.min.js"></script>
         <script src="./month_files/fullcalendar.min.js"></script>
-        <script>
-
-            $(document).ready(function () {
-
-                $('#calendar').fullCalendar({
-                    header: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'month,agendaWeek,agendaDay'
-                    },
-                    defaultDate: '2014-06-12',
-                    defaultView: 'month',
-                    editable: true,
-                    events: [
-                        {
-                            title: 'All Day Event',
-                            start: '2014-06-01'
-                        },
-                        {
-                            title: 'Long Event',
-                            start: '2014-06-07',
-                            end: '2014-06-10'
-                        },
-                        {
-                            id: 999,
-                            title: 'Repeating Event',
-                            start: '2014-06-09T16:00:00'
-                        },
-                        {
-                            id: 999,
-                            title: 'Repeating Event',
-                            start: '2014-06-16T16:00:00'
-                        },
-                        {
-                            title: 'Meeting',
-                            start: '2014-06-12T10:30:00',
-                            end: '2014-06-12T12:30:00'
-                        },
-                        {
-                            title: 'Lunch',
-                            start: '2014-06-12T12:00:00'
-                        },
-                        {
-                            title: 'Birthday Party',
-                            start: '2014-06-13T07:00:00'
-                        },
-                        {
-                            title: 'Click for Google',
-                            url: 'http://google.com/',
-                            start: '2014-06-28'
-                        }
-                    ]
-                });
-
-            });
-
-        </script>
-
-
-
     </head>
 
     <body>
         <header>
-            <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header page-scroll">
                         <!--Header-->
-                        <img src ="littletreby.png" alt="Treby IF" class="navbar-left"/>
+                        <img src="littletreby.png" alt="Treby IF" class="navbar-left"/>
                         <button class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -98,8 +38,9 @@
                         </ul>
 
                     </div>
+                </div>
             </nav>
-
+        </header>
             <section id="intro" class="intro-section">
                 <div class="container">
                     <div class="row">
@@ -114,11 +55,11 @@
 
             <!-- Container (The Band Section) -->
             <div id="foreningen" class="container text-center">
-                <h3>Föreningen</h3>
+                <h2>Föreningen</h2>
                 <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
 
-            <div id="carousel-example-generic" class="carousel slide" style="width: 70%; margin: 0 auto" data-ride="carousel">
+            <div id="carousel-example-generic" class="carousel slide" style="width:70%; margin: 0 auto" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -129,24 +70,18 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="bild1.jpg" alt="..." >
-                        <div class="carousel-caption">
-
-                        </div>
+                        <img src="bild2.jpg" alt="..." >
+                        <div class="carousel-caption"></div>
                     </div>
 
                     <div class="item">
                         <img src="bild2.jpg" alt="..." >
-                        <div class="carousel-caption">
-                            ...
-                        </div>
+                        <div class="carousel-caption"></div>
                     </div>
 
                     <div class="item">
-                        <img src="bild3.jpg" alt="..." >
-                        <div class="carousel-caption">
-                            ...
-                        </div>
+                        <img src="bild2.jpg" alt="..." >
+                        <div class="carousel-caption"></div>
                     </div>
                 </div>
 
@@ -162,73 +97,69 @@
             </div>
 
             <div id="truppen" class="container text-center">
-                <h3>TRUPPEN</h3>
+                <h2>Truppen</h2>
                 <p><em>Vi har en mycket ung trupp med många talanger</em></p>
-                <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Treby IF har en ljus framtid. Våra spelare kan sammanfattas med tre ord. Unga, hungriga och utvecklingsbara. Herrlaget består utav 20 spelare och genomsnittligt har truppen en ålder på 18 år, vilket är överlägset yngst i serien. Våra värderingar för hur fotboll ska spelas är väldigt simpla. Bollen ska rullas på marken, och detta med kvalité samt ett högt tempo. Vi går ut med inställningen om att vi ska göra vårt yppersta för att vinna varje match. Men det viktigaste av allt - <strong>att vi jobbar som ett lag och har kul tillsammans</strong>.</p>
                 <br>
                 <div class="row">
                     <div class="col-sm-6 col-md-3 bild-padding">
                         <p class="text-center"><strong>Anfallare</strong></p>
                         <a href="#demo" data-toggle="collapse">
-                            <img src="img/forwards.png" alt="Random Name" width="150" height="150">
+                            <img src="img/forwards.png" alt="forwards" width="150" height="150">
                         </a>
 
                         <div id="demo" class="collapse">
-                            <p>16. Elis Abdulahi</p>
-                            <p>11. Oscar Allhorn</p>
-                            <p>88. Rustom Kesete</p>
                             <p>9. Simon Skog Olofsson</p>
+                            <p>11. Oscar Allhorn</p>
+                            <p>16. Elis Abdulahi</p>
+                            <p>88. Rustom Kesete</p>
                         </div>
-                        
+
                     </div>
-                    
+
 
                     <div class="col-sm-6 col-md-3 bild-padding">
                         <p class="text-center"><strong>Mittfältare</strong></p>
                         <a href="#demo2" data-toggle="collapse">
-                            <img src="img/mittfältare.png" alt="Bulb" width="150" height="150">
+                            <img src="img/mittfältare.png" alt="mittfältare" width="150" height="150">
                         </a>
                         <div id="demo2" class="collapse">
                             <p>15. Fabian Andersson</p>
-                            <p>6. Musgun Berhane</p>
-                            <p>21. Rasmus Bjursgård</p>
                             <p>17. Albin Celander</p>
+                            <p>21. Rasmus Bjursgård</p>
                             <p>52. Hampus Jönsson</p>
-                        </div>
-                        <br>
+                        </div>                        
                     </div>
 
                     <div class="col-sm-6 col-md-3 bild-padding">
                         <p class="text-center"><strong>Försvarare</strong></p>
                         <a href="#demo3" data-toggle="collapse">
-                            <img src="img/backar.png" alt="Shield" width="150" height="150">
+                            <img src="img/backar.png" alt="backar" width="150" height="150">
                         </a>
                         <div id="demo3" class="collapse">
                             <p>7. Gustav Andersson</p>
-                            <p>98. Johannes Gunnarsson</p>
                             <p>13. Eddie Käll Wigstrand</p>
-                            <p>55. Gabriel Magnusson</p>
                             <p>14. Rasmus Nilsson</p>
+                            <p>55. Gabriel Magnusson</p>
+                            <p>98. Johannes Gunnarsson</p>                           
                         </div>
-                        <br>
                     </div>
 
                     <div class="col-sm-6 col-md-3 bild-padding">
                         <p class="text-center"><strong>Målvakter</strong></p>
                         <a href="#demo4" data-toggle="collapse">
-                            <img src="img/malvakt.png" alt="Random Name" width="150" height="150">
+                            <img src="img/malvakt.png" alt="målvakter   " width="150" height="150">
                         </a>
 
                         <div id="demo4" class="collapse">
-                            <p>Lukas Persson-Wiremyr</p>
-                            <p>Samuel Persson-Wiremyr</p>
+                            <p>1. Lukas Persson-Wiremyr</p>
+                            <p>22. Samuel Persson-Wiremyr</p>
                         </div>
-                        <br>
                     </div>
                 </div>
             </div>
-            <br><br
-                <div class="container">
+            
+            <div class="container calendar-section">
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1">
                         <div id="calendar" class="fc fc-unthemed fc-ltr">
@@ -286,13 +217,13 @@
                                                                     <table>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td class="fc-day fc-widget-content fc-sun fc-past" data-date="2014-06-01"></td>
-                                                                                <td class="fc-day fc-widget-content fc-mon fc-past" data-date="2014-06-02"></td>
-                                                                                <td class="fc-day fc-widget-content fc-tue fc-past" data-date="2016-09-01"></td>
-                                                                                <td class="fc-day fc-widget-content fc-wed fc-past" data-date="2014-06-04"></td>
-                                                                                <td class="fc-day fc-widget-content fc-thu fc-past" data-date="2014-06-05"></td>
-                                                                                <td class="fc-day fc-widget-content fc-fri fc-past" data-date="2014-06-06"></td>
-                                                                                <td class="fc-day fc-widget-content fc-sat fc-past" data-date="2014-06-07"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sun fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-mon fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-tue fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-wed fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-thu fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-fri fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sat fc-past"></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -301,25 +232,25 @@
                                                                     <table>
                                                                         <thead>
                                                                             <tr>
-                                                                                <td class="fc-day-top fc-sun fc-other-month fc-past" data-date="2014-06-01">
+                                                                                <td class="fc-day-top fc-sun fc-other-month fc-past">
                                                                                     <span class="fc-day-number">29</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-mon fc-other-month fc-past" data-date="2014-06-02">
+                                                                                <td class="fc-day-top fc-mon fc-other-month fc-past">
                                                                                     <span class="fc-day-number">30</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-tue fc-other-month fc-past" data-date="2014-06-03">
+                                                                                <td class="fc-day-top fc-tue fc-other-month fc-past">
                                                                                     <span class="fc-day-number">31</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-wed fc-other-month fc-past" data-date="2014-06-04">
+                                                                                <td class="fc-day-top fc-wed fc-other-month fc-past">
                                                                                     <span class="fc-day-number">1</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-thu fc-past" data-date="2014-06-05">
+                                                                                <td class="fc-day-top fc-thu fc-past">
                                                                                     <span class="fc-day-number">2</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-fri fc-past" data-date="2014-06-06">
+                                                                                <td class="fc-day-top fc-fri fc-past">
                                                                                     <span class="fc-day-number">3</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-sat fc-past" data-date="2014-06-07">
+                                                                                <td class="fc-day-top fc-sat fc-past">
                                                                                     <span class="fc-day-number">4</span>
                                                                                 </td>
                                                                             </tr>
@@ -357,13 +288,13 @@
                                                                     <table>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td class="fc-day fc-widget-content fc-sun fc-past" data-date="2014-06-08"></td>
-                                                                                <td class="fc-day fc-widget-content fc-mon fc-past" data-date="2014-06-09"></td>
-                                                                                <td class="fc-day fc-widget-content fc-tue fc-past" data-date="2014-06-10"></td>
-                                                                                <td class="fc-day fc-widget-content fc-wed fc-past" data-date="2014-06-11"></td>
-                                                                                <td class="fc-day fc-widget-content fc-thu fc-past" data-date="2014-06-12"></td>
-                                                                                <td class="fc-day fc-widget-content fc-fri fc-past" data-date="2014-06-13"></td>
-                                                                                <td class="fc-day fc-widget-content fc-sat fc-past" data-date="2014-06-14"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sun fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-mon fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-tue fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-wed fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-thu fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-fri fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sat fc-past"></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -372,25 +303,25 @@
                                                                     <table>
                                                                         <thead>
                                                                             <tr>
-                                                                                <td class="fc-day-top fc-sun fc-past" data-date="2014-06-08">
+                                                                                <td class="fc-day-top fc-sun fc-past">
                                                                                     <span class="fc-day-number">5</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-mon fc-past" data-date="2014-06-09">
+                                                                                <td class="fc-day-top fc-mon fc-past">
                                                                                     <span class="fc-day-number">6</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-tue fc-past" data-date="2014-06-10">
+                                                                                <td class="fc-day-top fc-tue fc-past">
                                                                                     <span class="fc-day-number">7</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-wed fc-past" data-date="2014-06-11">
+                                                                                <td class="fc-day-top fc-wed fc-past">
                                                                                     <span class="fc-day-number">8</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-thu fc-past" data-date="2014-06-12">
+                                                                                <td class="fc-day-top fc-thu fc-past">
                                                                                     <span class="fc-day-number">9</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-fri fc-past" data-date="2014-06-13">
+                                                                                <td class="fc-day-top fc-fri fc-past">
                                                                                     <span class="fc-day-number">10</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-sat fc-past" data-date="2014-06-14">
+                                                                                <td class="fc-day-top fc-sat fc-past">
                                                                                     <span class="fc-day-number">11</span>
                                                                                 </td>
                                                                             </tr>
@@ -435,13 +366,13 @@
                                                                     <table>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td class="fc-day fc-widget-content fc-sun fc-past" data-date="2014-06-15"></td>
-                                                                                <td class="fc-day fc-widget-content fc-mon fc-past" data-date="2014-06-16"></td>
-                                                                                <td class="fc-day fc-widget-content fc-tue fc-past" data-date="2014-06-17"></td>
-                                                                                <td class="fc-day fc-widget-content fc-wed fc-past" data-date="2014-06-18"></td>
-                                                                                <td class="fc-day fc-widget-content fc-thu fc-past" data-date="2014-06-19"></td>
-                                                                                <td class="fc-day fc-widget-content fc-fri fc-past" data-date="2014-06-20"></td>
-                                                                                <td class="fc-day fc-widget-content fc-sat fc-past" data-date="2014-06-21"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sun fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-mon fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-tue fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-wed fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-thu fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-fri fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sat fc-past"></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -450,25 +381,25 @@
                                                                     <table>
                                                                         <thead>
                                                                             <tr>
-                                                                                <td class="fc-day-top fc-sun fc-past" data-date="2014-06-15">
+                                                                                <td class="fc-day-top fc-sun fc-past">
                                                                                     <span class="fc-day-number">12</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-mon fc-past" data-date="2014-06-16">
+                                                                                <td class="fc-day-top fc-mon fc-past">
                                                                                     <span class="fc-day-number">13</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-tue fc-past" data-date="2014-06-17">
+                                                                                <td class="fc-day-top fc-tue fc-past">
                                                                                     <span class="fc-day-number">14</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-wed fc-past" data-date="2014-06-18">
+                                                                                <td class="fc-day-top fc-wed fc-past">
                                                                                     <span class="fc-day-number">15</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-thu fc-past" data-date="2014-06-19">
+                                                                                <td class="fc-day-top fc-thu fc-past">
                                                                                     <span class="fc-day-number">16</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-fri fc-past" data-date="2014-06-20">
+                                                                                <td class="fc-day-top fc-fri fc-past">
                                                                                     <span class="fc-day-number">17</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-sat fc-past" data-date="2014-06-21">
+                                                                                <td class="fc-day-top fc-sat fc-past">
                                                                                     <span class="fc-day-number">18</span>
                                                                                 </td>
                                                                             </tr>
@@ -506,13 +437,13 @@
                                                                     <table>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td class="fc-day fc-widget-content fc-sun fc-past" data-date="2014-06-22"></td>
-                                                                                <td class="fc-day fc-widget-content fc-mon fc-past" data-date="2014-06-23"></td>
-                                                                                <td class="fc-day fc-widget-content fc-tue fc-past" data-date="2014-06-24"></td>
-                                                                                <td class="fc-day fc-widget-content fc-wed fc-past" data-date="2014-06-25"></td>
-                                                                                <td class="fc-day fc-widget-content fc-thu fc-past" data-date="2014-06-26"></td>
-                                                                                <td class="fc-day fc-widget-content fc-fri fc-past" data-date="2014-06-27"></td>
-                                                                                <td class="fc-day fc-widget-content fc-sat fc-past" data-date="2014-06-28"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sun fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-mon fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-tue fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-wed fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-thu fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-fri fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sat fc-past"></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -521,25 +452,25 @@
                                                                     <table>
                                                                         <thead>
                                                                             <tr>
-                                                                                <td class="fc-day-top fc-sun fc-past" data-date="2014-06-22">
+                                                                                <td class="fc-day-top fc-sun fc-past">
                                                                                     <span class="fc-day-number">19</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-mon fc-past" data-date="2014-06-23">
+                                                                                <td class="fc-day-top fc-mon fc-past">
                                                                                     <span class="fc-day-number">20</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-tue fc-past" data-date="2014-06-24">
+                                                                                <td class="fc-day-top fc-tue fc-past">
                                                                                     <span class="fc-day-number">21</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-wed fc-past" data-date="2014-06-25">
+                                                                                <td class="fc-day-top fc-wed fc-past">
                                                                                     <span class="fc-day-number">22</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-thu fc-past" data-date="2014-06-26">
+                                                                                <td class="fc-day-top fc-thu fc-past">
                                                                                     <span class="fc-day-number">23</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-fri fc-past" data-date="2014-06-27">
+                                                                                <td class="fc-day-top fc-fri fc-past">
                                                                                     <span class="fc-day-number">24</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-sat fc-past" data-date="2014-06-28">
+                                                                                <td class="fc-day-top fc-sat fc-past">
                                                                                     <span class="fc-day-number">25</span>
                                                                                 </td>
                                                                             </tr>
@@ -584,13 +515,13 @@
                                                                     <table>
                                                                         <tbody>
                                                                             <tr>
-                                                                                <td class="fc-day fc-widget-content fc-sun fc-past" data-date="2014-06-29"></td>
-                                                                                <td class="fc-day fc-widget-content fc-mon fc-past" data-date="2014-06-30"></td>
-                                                                                <td class="fc-day fc-widget-content fc-tue fc-other-month fc-past" data-date="2014-07-01"></td>
-                                                                                <td class="fc-day fc-widget-content fc-wed fc-other-month fc-past" data-date="2014-07-02"></td>
-                                                                                <td class="fc-day fc-widget-content fc-thu fc-other-month fc-past" data-date="2014-07-03"></td>
-                                                                                <td class="fc-day fc-widget-content fc-fri fc-other-month fc-past" data-date="2014-07-04"></td>
-                                                                                <td class="fc-day fc-widget-content fc-sat fc-other-month fc-past" data-date="2014-07-05"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sun fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-mon fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-tue fc-other-month fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-wed fc-other-month fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-thu fc-other-month fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-fri fc-other-month fc-past"></td>
+                                                                                <td class="fc-day fc-widget-content fc-sat fc-other-month fc-past"></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
@@ -599,25 +530,25 @@
                                                                     <table>
                                                                         <thead>
                                                                             <tr>
-                                                                                <td class="fc-day-top fc-sun fc-past" data-date="2014-06-29">
+                                                                                <td class="fc-day-top fc-sun fc-past">
                                                                                     <span class="fc-day-number">26</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-mon fc-past" data-date="2014-06-30">
+                                                                                <td class="fc-day-top fc-mon fc-past">
                                                                                     <span class="fc-day-number">27</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-tue fc-past" data-date="2014-07-01">
+                                                                                <td class="fc-day-top fc-tue fc-past">
                                                                                     <span class="fc-day-number">28</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-wed fc-past" data-date="2014-07-02">
+                                                                                <td class="fc-day-top fc-wed fc-past">
                                                                                     <span class="fc-day-number">29</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-thu fc-past" data-date="2014-07-03">
+                                                                                <td class="fc-day-top fc-thu fc-past">
                                                                                     <span class="fc-day-number">30</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-fri fc-other-month fc-past" data-date="2014-07-04">
+                                                                                <td class="fc-day-top fc-fri fc-other-month fc-past">
                                                                                     <span class="fc-day-number">1</span>
                                                                                 </td>
-                                                                                <td class="fc-day-top fc-sat fc-other-month fc-past" data-date="2014-07-05">
+                                                                                <td class="fc-day-top fc-sat fc-other-month fc-past">
                                                                                     <span class="fc-day-number">2</span>
                                                                                 </td>
                                                                             </tr>
@@ -647,7 +578,7 @@
                                                                                     <a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end fc-draggable">
                                                                                         <div class="fc-content">
                                                                                             <span class="fc-time">15:00</span>
-                                                                                            <span class="fc-title"><br>Match Östanå Bruks IF</span>
+                                                                                            <span class="fc-title"><br>Match Östanå IF</span>
                                                                                         </div>
                                                                                     </a>
                                                                                 </td>
@@ -668,8 +599,9 @@
                         </div>
                     </div>
                 </div>
+            </div>
                 <div id="contact" class="container">   
-                    <h3 class="text-center">Kontakta oss</h3>
+                    <h2 class="text-center">Kontakta oss</h2>
 
                     <div class="row">
                         <div class="col-md-4">
@@ -700,21 +632,13 @@
                 </div>
 
                 <footer class="text-center">
-                    <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="Till toppen">
-                        <span class="glyphicon glyphicon-chevron-up"></span>
-                    </a>
-                    <p>Webpage Made By Gustav Andersson</p>
+                    <p>
+                        <a class="up-arrow page-scroll" href="#intro" data-toggle="tooltip" title="Till toppen">
+                            <span class="glyphicon glyphicon-chevron-up"></span>
+                        </a>
+                        <br/>Webpage Made By Gustav Andersson</p>
                 </footer>
-
-                <!--<footer class="container-fluid bg-4 text-center">
-                    <p>Webpage Made By Gustav Andersson <span class="glyphicon glyphicon-copyright-mark"></span></p> 
-                </footer> -->
-
-                <script>
-                    $('.carousel').carousel();
-                </script>
-
-
+            
                 <script src="js/jquery.js"></script>
                 <!-- Bootstrap Core JavaScript -->
                 <script src="js/bootstrap.min.js"></script>
