@@ -8,13 +8,19 @@ body
     padding-top: 50px;
     font: 15px "Montserrat", sans-serif;
     line-height: 1.8;
-    background-color: #F8F8F8;
+    background-color: #F8F8F8; 
     width: 100%;
     height: 100%;
 }
 
+
 .bild-padding
 {
+    padding-bottom: 35px;
+    padding-top: 20px;
+}
+
+#foreningen{
     padding-bottom: 35px;
 }
 
@@ -23,21 +29,17 @@ body
     padding-top: 35px;
 }
 
-#calendar 
-{
-    margin: 0 auto;
-}
-
 .calendar-section
 {
     padding-top: 35px;
 }
-        
-h3, h4 
-{
-      margin: 10px 0 30px 0;
-      font-size: 20px;
-      color: #111;
+
+.fc-view-container{
+    background-color: #FFFFFF;
+}
+
+h2{
+    text-align: center;
 }
 
 .navbar 
@@ -66,13 +68,18 @@ h3, h4
             
 .intro-section 
 {
-    height: 80%;
+    height: 100%;
     padding-top: 150px;
     text-align: center;
-    background-image: url('Kids-Football-Match.png');
+    background-image: url('img/Kids-Football-Match.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    color: #fff;
+    color: #ffffff;
+}
+
+#carousel-example-generic{
+    width:70%; 
+    margin: 0 auto;
 }
 
 .btn
@@ -91,11 +98,29 @@ h3, h4
     color: #000;
 }
 
+.trupp-bilder{
+    width: 150px;
+    height: 150px;
+}
+
+.fc-widget-content{
+    height: 108px;
+}
+
+#googleMap {
+    width: 100%;
+    height: 400px; 
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); 
+    padding-top: 20px;
+}
+
 footer 
 {
       background-color: #2d2d30;
       color: #ffffff;
       padding: 32px; 
+      text-align: center;
 }
 
 footer a 
@@ -111,14 +136,15 @@ footer a
   }
   
            
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 768px)
 {
     /* css for mobile */
     .intro-section {
+    height: 100%;
     padding-top: 150px;
     text-align: center;
     background: #fff;
-    background: url('Kids-Football-Match.png');
+    background: url('img/smallmatch.png');
     background-size: 200%;
     background-repeat: no-repeat;
 }  
@@ -127,7 +153,7 @@ footer a
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 10px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
